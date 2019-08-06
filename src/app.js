@@ -1,6 +1,8 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
+require('env2')('.env');
+
 
 const routes = require('./routes/index');
 const helpers = require('./views/helpers/index')
@@ -23,7 +25,7 @@ app.engine (
     )
 )
 
-app.set('port',process.env.PORT || 3030);
+app.set('port',process.env.PORT || 4030);
 app.use(routes);
 
 module.exports = app;
