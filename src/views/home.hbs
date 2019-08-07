@@ -1,2 +1,6 @@
 <h1>Home </h1>
-<ui></ui>
+<form action='/books' method="GET" id="form">
+    <input name='title' id="input" value=" " pattern="^[a-zA-Z0-9]*$" required>
+    <input type="submit" id='search' value="Go">
+    <p id='error-msg'></p>
+</form>
