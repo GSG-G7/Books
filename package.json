@@ -8,9 +8,10 @@
   },
   "scripts": {
     "test": "node ./test/test.js | tap-spec",
-    "dev": "nodemon ./src/server.js",
+    "watch": "nodemon ./src/server.js",
     "cover": "nyc --reporter=lcov node ./test/test.js",
-    "coverage": "nyc node ./test/*.js"
+    "coverage": "nyc node ./test/*.js",
+    "start": "node ./src/server.js"
   },
   "repository": {
     "type": "git",
