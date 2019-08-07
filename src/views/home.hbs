@@ -1,6 +1,11 @@
 <h1>Home </h1>
 <form action='/books' method="GET" id="form">
-    <input name='title' id="input" value=" " pattern="^[a-zA-Z0-9]*$" required>
+    <input name='title' id="input" pattern="^[a-zA-Z0-9]*$" required>
     <input type="submit" id='search' value="Go">
     <p id='error-msg'></p>
+    <ul>
+        {{#each result}}
+        <li>{{result.volumeInfo.title}}</li>
+        {{/each}}
+    </ul>
 </form>
