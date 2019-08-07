@@ -6,7 +6,7 @@ const error = document.querySelector('#error-msg');
 input.addEventListener('keyup', (e) => {
     error.textContent = "";
     const book_title = e.target.value.trim();
-    const reg = /^[a-zA-Z0-9]*$/
+    const reg = /^[a-zA-Z0-9-\s]*$/
     if (!book_title) {
         error.textContent = 'Enter book titel';
     } else if (!reg.test(book_title)) {
