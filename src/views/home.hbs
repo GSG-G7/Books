@@ -1,6 +1,15 @@
 <h1>Home </h1>
-<form action='/books' method="GET" id="form">
-    <input name='title' id="input" value=" " pattern="^[a-zA-Z0-9]*$" required>
+<form action='/books' method="get" id="form">
+    <input type='text' name='title' id="input" pattern="[a-zA-Z0-9-\s]+" required>
     <input type="submit" id='search' value="Go">
     <p id='error-msg'></p>
-</form>
+    </form>
+    <div>
+    {{#each (grabData response) }}
+    <img src={{this.image}}/>
+    <h1>Title : {{this.title}} {{this.averageRating}} </h1>
+    <h1>Author: {{this.authors}}</h1>
+    <h1>Category: {{this.category}}</h1>
+    <hr>
+    {{/each}}
+   </div>
