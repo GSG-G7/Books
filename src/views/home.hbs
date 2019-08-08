@@ -1,15 +1,36 @@
-<h1>Home </h1>
-<form action='/books' method="get" id="form">
-    <input type='text' name='title' id="input" pattern="[a-zA-Z0-9-\s]+" required>
-    <input type="submit" id='search' value="Go">
-    <p id='error-msg'></p>
+<main>
+    <section class="home">
+         <header class="home__header">
+           <h1 class='home__logo'>Books</h1>
+        </header>  
+  
+    <form class="form" action='/books' method="get" id="form" aria-label=" ">
+        <input class="form__input" type='text' name='title' id="input" aria-label="bookName" pattern="[a-zA-Z0-9-\s]+" required>
+        <input class="form__submit" type="submit" id='search' aria-label="btnSerch" value="search">
+        <p id='error-msg'></p>
     </form>
-    <div>
+
+    <ul>
+
     {{#each (grabData response) }}
-    <img src={{this.image}}/>
-    <h1>Title : {{this.title}} {{this.averageRating}} </h1>
-    <h1>Author: {{this.authors}}</h1>
-    <h1>Category: {{this.category}}</h1>
-    <hr>
+            <li  class="books">
+
+              <div>
+                <img src={{this.image}} alt="book image" class="book__img"/>
+             </div>
+             <div class="book__info">
+                <h1 class="book__title"> <span class="title">Title : </span>  {{this.title}} {{this.averageRating}} </h1>
+                <h1 class="book__author"><span class="title">Author:  </span>{{this.authors}}</h1>
+                <h1 class="book__category"><span class="title">Category:</span> {{this.category}}</h1>
+              </div>
+             
+            </li>
+            <hr>
     {{/each}}
-   </div>
+    </ul>
+ 
+
+   </section>
+   
+</main>
+
