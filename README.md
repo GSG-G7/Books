@@ -5,7 +5,7 @@
 ## Our App:
 Is  a one page website, let the user to search for any book he wants.
 
-# ***Just enter the title of the book and injoy :)***
+# ***Just enter the title of the book and enjoy :)***
 
 
 # *Why:*
