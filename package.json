@@ -10,7 +10,7 @@
     "test": "node ./test/test.js | tap-spec",
     "watch": "nodemon ./src/server.js",
     "cover": "nyc --reporter=lcov node ./test/test.js",
-    "coverage": "nyc node ./test/*.js",
+    "coverage": "nyc node ./test/test.js",
     "start": "node ./src/server.js"
   },
   "repository": {

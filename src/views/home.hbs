@@ -4,7 +4,7 @@
            <h1 class='home__logo'>Books</h1>
         </header>  
   
-    <form class="form" action='/books' method="get" id="form" aria-label=" ">
+    <form class="form" action='/books' method="get" id="form" aria-label=" " autocomplete="off">
         <input class="form__input" type='text' name='title' id="input" aria-label="bookName" pattern="[a-zA-Z0-9-\s]+" required>
         <input class="form__submit" type="submit" id='search' aria-label="btnSerch" value="search">
         <p id='error-msg'></p>

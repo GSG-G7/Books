@@ -28,8 +28,18 @@ test("Testing /books endpoint", (t) => {
         .expect('Content-Type', /html/)
         .end((err, res) => {
             t.error(err);
-            // t.deepEqual(grabData(testObj))
-            console.log(res.text);
             t.end();
         })
 })
+
+test('Not Found path return status code 404', (t) => {
+    supertest(app)
+    .get('/*')
+      .expect(400)
+      .expect('Content-Type', /html/)
+      .end((err, res) => {
+        t.error(err);
+        t.end();
+  });
+ 
+});
