@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/books', (req, res) => {
-   reg=/^[a-zA-Z0-9-\s]*/ ;
+  const reg=/^[a-zA-Z0-9-\s]*/ ;
   if(reg.test(req.query.title) && req.query.title){
    nodeFetch(`https://www.googleapis.com/books/v1/volumes?q=${req.query.title}+intitle:${req.query.title}&key=${process.env.API_KEY}`)
       .then(res => res.json())
