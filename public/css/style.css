@@ -41,6 +41,9 @@ body {
     width: 100%;
     margin: 0 auto;
   }
+  .book__description{
+     margin-top: 10px;
+  }
   .form{
     margin: 50px 20px 50px 20px ;
     width: 100%;
