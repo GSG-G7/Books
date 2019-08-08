@@ -1,6 +1,4 @@
 const input = document.querySelector('#input');
-const form = document.querySelector('#form');
-const search = document.querySelector('#search');
 const error = document.querySelector('#error-msg');
 
 input.addEventListener('keyup', (e) => {
