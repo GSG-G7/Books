@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background: #232526;
+    color: #fff;
+}
+.form__input{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 0 1rem 0;
+}
+.form__submit{
+        width: 50%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5rem 0.5rem;
+        border-radius: 11px;
+        color: #fff;
+        background: linear-gradient( #9526a3eb, #d4c3cf);
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+}
+.book__img{
+    margin-left: 50px;
+}
+  hr {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .book__description{
+     margin-top: 10px;
+  }
+  .form{
+    margin: 50px 20px 50px 20px ;
+    width: 100%;
+    text-align: center;
+  }
+  .form__input{
+    width: 80%; 
+    height: 10vh;
+  }
+  .form__submit{
+      width: 10%;
+      height: 10vh;
+  }
+  .home {
+    width: 100%;
+    height: 60vh;
+    padding: 3rem 2rem;
+}
+
+.home__header {
+    width: 100%;
+    text-align: center;
+}
+
+.home__logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    background: linear-gradient( #9526a3eb, #c770ae);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+   }
+  
+  
+  .books{
+    margin: 20px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 70hv;
+  }
+  .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient( #9526a3eb, #d4c3cf);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent; 
+  }
+  .book__info{
+    margin: 20px 5px 5px 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content :space-around;
+  }
+
+  @media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        max-width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 7px;
+        text-align: center;
+        background: #232526;
+        color: #fff;
+    }
+      
+  .books{
+    margin: 15px 5px 5px 5px;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 70hv;
+  }
+    html {
+        font-size: 18px;
+    }
+    .home {
+        height: 80vh;
+    }
+    hr{
+        width: 100%;
+    }
+    .form{
+        margin: 5px 5px 5px 5px ;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    .form__input{
+        width: 90%; 
+        height: 7vh;
+        margin: 0 0 0 0;
+      }
+      .form__submit{
+          width: 30%;
+          height: 7vh;
+          margin-left: 10px;
+
+      }
+      .title {
+          font-size: .5rem;
+      }
+
+      .book__img{
+        height: 20vh;
+        width: 80px;
+        margin-left: 5px;
+    }
+    .book__info{
+        width: 90%;
+        margin-top: 5px;
+        display: flex;
+        text-align:left;
+        flex-direction: column;
+        justify-content :space-around;
+      }
+      .home__logo{
+          font-size: 2rem;
+      }
+      .home__header{
+          margin-top: 0px;
+      }
+}

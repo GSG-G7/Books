@@ -1,10 +1,8 @@
 const input = document.querySelector('#input');
-const form = document.querySelector('#form');
-const search = document.querySelector('#search');
 const error = document.querySelector('#error-msg');
 
 input.addEventListener('keyup', (e) => {
-    error.textContent = "";
+    error.textContent = '';
     const book_title = e.target.value.trim();
     const reg = /^[a-zA-Z0-9-\s]*$/
     if (!book_title) {
