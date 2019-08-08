@@ -26,8 +26,15 @@ app.engine(
 )
 
 app.use(express.static('public'))
-
 app.set('port', process.env.PORT || 4030);
 app.use(routes);
+app.use((req,res) => {
+  res.status(400);
+  res.render('404')
+})
+app.use((err, req, res, next) => {
+  res.status(500);
+  res.render('500')
+})
 
 module.exports = app;
